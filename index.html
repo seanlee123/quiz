@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Quiz</title>
+    <link rel="stylesheet" type="text/css" href="main.css"> 
+  </head>
+  <body>
+    <div id="quiz">
+      <h1>Quiz</h1>
+      <div id="question1">
+        <div class="question">What is my dogs name?</div>
+        <input id="q1" type="radio" name="question1" value="a"/>
+        <label>Jezabel</label>
+        <input type="radio" name="question1" value="b"/>
+        <label>Landry</label>
+        <input type="radio" name="question1" value="c"/>
+        <label>Bedford</label>
+        <input type="radio" name="question1" value="d"/>
+        <label>Phineus</label>
+      </div>
+      <br />
+      <div id="question2">
+        <div class="question">What kind of dog do I own?</div>
+        <input type="radio" name="question2" value="a"/>
+        <label>Pug</label>
+        <input type="radio" name="question2" value="b"/>
+        <label>Border Collie</label>
+        <input id="q2" type="radio" name="question2" value="c"/>
+        <label>Springer Spaniel</label>
+        <input type="radio" name="question2" value="d"/>
+        <label>German Shepherd</label>
+      </div>
+      <br />
+      <div id="question3">
+        <div class="question">Is notepad best?</div>
+        <input type="radio" name="question3" value="a"/>
+        <label>Yes</label>
+        <input type="radio" name="question3" value="b"/>
+        <label>Yeah</label>
+        <input type="radio" name="question3" value="c"/>
+        <label>I guess</label>
+        <input id="q3"type="radio" name="question3" value="d"/>
+        <label>Yep</label>
+      </div>
+      <br />
+      <div id="question4">
+        <div class="question4">Do you think about Sea Lions?</div>
+        <input type="radio" name="question4" value="a"/>
+        <label>Daily</label>
+        <input id="q4" type="radio" name="question4" value="b"/>
+        <label>Every Day</label>
+        <input type="radio" name="question4" value="c"/>
+        <label>I did today</label>
+        <input type="radio" name="question4" value="d"/>
+        <label>I am right now!</label>
+      </div>
+      <br />
+      <div id="question5">
+        <div class="question5">Which picture is a dog?</div>
+        <input type="radio" name="question5" value="a"/>
+        <img src = "https://upload.wikimedia.org/wikipedia/commons/2/24/Male_mallard_duck_2.jpg" height="80" width="100">
+        <input id = "q5" type="radio" name="question5" value="b"/>
+        <img src = "http://media-cache-ak0.pinimg.com/236x/69/38/de/6938de22e4ecea0295c41b800f0e7b64.jpg" height="80" width="60">
+        <input type="radio" name="question5" value="c"/>
+        <img src = "http://www.jackspets.com/Images/Pet-Care-Information/Fish/Fish.png" height="80" width="100">
+        <input type="radio" name="question5" value="d"/>
+        <img src = "http://pediaa.com/wp-content/uploads/2015/01/How-to-Say-Hello-in-Different-Languages.png" height="80" width="100">
+      </div>
+      <br />
+      <button onclick="myFunction()">Submit</button>
+      <p id="demo"></p>
+      <script>
+      function myFunction() {
+        var cheeky = Math.random(0 - 1);
+        if (cheeky < 0.5) {
+          document.getElementById('quiz').innerHTML = '<h1 id = "ccc">Correct :)</h1><style>body{background-color:green;}#ccc{width:200px;margin-left:auto;margin-right:auto;padding-top:350px;}</style>';
+        } else {
+          document.getElementById('quiz').innerHTML = '<h1 id = "iii">GO AWAY!</h1><style>body{background-color:red;}#iii{width:200px;margin-left:auto;margin-right:auto;padding-top:350px;}</style>';
+        }
+        document.getElementById("demo").innerHTML = correct;
+      }
+      </script>
+    </div>
+  </body>
+</html>
